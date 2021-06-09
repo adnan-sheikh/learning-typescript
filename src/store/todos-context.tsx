@@ -15,7 +15,6 @@ export const TodosContext = React.createContext<TodosContextObj>({
 
 const TodosContextProvider: React.FC = (props) => {
   const [todos, setTodos] = useState<Todo[]>([]);
-  // const todos = [new Todo('Learn React'), new Todo('Learn Typescript')];
 
   const handleAddItem = (todoText: string) => {
     const newTodo = new Todo(todoText);
